@@ -21,6 +21,8 @@ void setup() {
   // put your setup code here, to run once:
   lcd.begin(16, 2);
   Serial.begin(9600);
+  ir_receiver.enableIRIn();
+  ir_receiver.blink13(true);
   lcd.setCursor(0,0);
   lcd.print("Welcome");
   delay(1000);
